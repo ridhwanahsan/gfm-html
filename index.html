@@ -149,11 +149,21 @@
             <div class="hero-swiper">
                <div class="hero-slide align-items-center pb-0">
                   <div class="hero-slider-image">
-                     <video class="gfn-hero-video-bg" autoplay muted loop playsinline preload="auto"
-                            poster="images/gfn/image0.jpg">
-                        <source src="images/gfn/gfn-hero-video.mp4" type="video/mp4">
-                     </video>
-                     <div class="gfn-hero-video-overlay"></div>
+                     <div class="gfn-hero-video-wrap">
+                        <iframe id="gfn-hero-yt" class="gfn-hero-video-bg"
+                                src="https://www.youtube-nocookie.com/embed/zoGrBWQbRYQ?autoplay=1&mute=1&controls=0&loop=1&playlist=zoGrBWQbRYQ&rel=0&modestbranding=1&fs=0&iv_load_policy=3&disablekb=1&start=2"
+                                frameborder="0"
+                                playsinline
+                                webkit-playsinline
+                                mozallowfullscreen
+                                oallowfullscreen
+                                msallowfullscreen
+                                allow="autoplay; encrypted-media; picture-in-picture"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                scrolling="no"
+                                allowfullscreen></iframe>
+                     </div>
+                     <div class="gfn-hero-video-overlay gfn-hero-cover-click"></div>
                   </div>
                   <!-- Content Start -->
                   <div class="container">
@@ -866,6 +876,30 @@
    <script src="js/SplitText.js"></script>
    <!-- Main Custom js file -->
    <script src="js/script.js"></script>
+   <!-- GFN Hero YouTube Autoplay Unlock Fallback -->
+   <script>
+      (function () {
+         var yt = document.getElementById('gfn-hero-yt');
+         if (!yt) return;
+         var baseSrc = yt.src;
+         var fired = false;
+         function forceStart() {
+            if (fired) return;
+            fired = true;
+            yt.src = 'about:blank';
+            setTimeout(function () { yt.src = baseSrc; }, 60);
+            ['touchstart', 'mousedown', 'keydown', 'pointerdown'].forEach(function (ev) {
+               document.removeEventListener(ev, forceStart, true);
+            });
+         }
+         ['touchstart', 'mousedown', 'keydown', 'pointerdown'].forEach(function (ev) {
+            document.addEventListener(ev, forceStart, true);
+         });
+         window.addEventListener('load', function () {
+            setTimeout(forceStart, 800);
+         }, { once: true });
+      })();
+   </script>
 </body>
 
 </html>
