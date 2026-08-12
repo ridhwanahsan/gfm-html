@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="GFN Projects Inc. — Environmental Responsibility & Quality Management. ISO 14001, ISO 9001, ISO 45001 certified oil & gas operations.">
+   <title>Environment &amp; Quality — GFN Projects Inc.</title>
+   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/mousecursor.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.1.0/css/all.min.css" rel="stylesheet" media="screen">
+   <link href="css/slicknav.min.css" rel="stylesheet">
+   <link href="css/aos.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet">
+   <link href="css/custom.css" rel="stylesheet" media="screen">
+   <style>
+      .gfn-cert-badge {
+         display: inline-flex;
+         align-items: center;
+         gap: 10px;
+         background: linear-gradient(135deg, #0a1628, #1a3a5a);
+         border: 2px solid #f0a500;
+         border-radius: 50px;
+         padding: 12px 24px;
+         color: #fff;
+         font-weight: 700;
+         font-size: 15px;
+         margin: 8px;
+      }
+
+      .gfn-cert-badge i {
+         color: #f0a500;
+         font-size: 18px;
+      }
+
+      .gfn-env-card {
+         border-radius: 12px;
+         padding: 32px;
+         height: 100%;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .gfn-env-card:hover {
+         transform: translateY(-6px);
+         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+      }
+
+      .gfn-tab-nav {
+         display: flex;
+         gap: 0;
+         border-radius: 50px;
+         overflow: hidden;
+         background: #f0f4f8;
+         padding: 6px;
+         margin-bottom: 40px;
+      }
+
+      .gfn-tab-btn {
+         flex: 1;
+         padding: 12px 24px;
+         border: none;
+         background: transparent;
+         border-radius: 44px;
+         font-weight: 600;
+         font-size: 15px;
+         cursor: pointer;
+         transition: all 0.3s;
+         color: #5a6a7e;
+      }
+
+      .gfn-tab-btn.active {
+         background: #0a1628;
+         color: #f0a500;
+      }
+
+      .gfn-tab-content {
+         display: none;
+      }
+
+      .gfn-tab-content.active {
+         display: block;
+      }
+
+      .gfn-principle-item {
+         display: flex;
+         align-items: flex-start;
+         gap: 20px;
+         padding: 24px;
+         border-radius: 12px;
+         background: #fff;
+         border: 1px solid #e8edf4;
+         margin-bottom: 16px;
+         transition: border-color 0.3s, box-shadow 0.3s;
+      }
+
+      .gfn-principle-item:hover {
+         border-color: #f0a500;
+         box-shadow: 0 4px 20px rgba(240, 165, 0, 0.1);
+      }
+
+      .gfn-principle-icon {
+         width: 50px;
+         height: 50px;
+         min-width: 50px;
+         background: linear-gradient(135deg, #f0a500, #d4891a);
+         border-radius: 10px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: #fff;
+         font-size: 20px;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- Preloader -->
+   <div class="sis-preloader">
+      <div class="sis-loading-container">
+         <div class="sis-loading"></div>
+         <div class="sis-loading-icon">
+            <figure class="sis-reveal"><img src="images/gfn/logo.png" alt="GFN" style="max-height:60px;"></figure>
+         </div>
+      </div>
+   </div>
+
+   <!-- Header -->
+   <div class="sisf-page-background">
+      <header id="sisf-page-header" class="sisf-main-header sisf-standerd-header position-relative">
+         <div class="sis-header-top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                     <div class="sis-header_col">
+                        <div class="sisf-widget-holder">
+                           <div class="sisf-top-bar-widget d-flex align-items-center gap-4">
+                              <div class="sisf-icon-list-item"><a href="tel:+1647555123"><span
+                                       class="sisf-e-title-text"><i class="fa-solid pe-2 fa-phone"></i>+1 (647)
+                                       555-0123</span></a></div>
+                              <div class="mail-us"><a href="mailto:info@gfnprojects.com"><span
+                                       class="sisf-e-title-text"><i
+                                          class="fa-regular fa-envelope pe-2"></i>info@gfnprojects.com</span></a></div>
+                              <div class="sis-location"><a href="#"><span class="sisf-e-title-text"><i
+                                          class="fa-solid fa-location-dot pe-2"></i>North America | Middle East |
+                                       Africa</span></a></div>
+                           </div>
+                           <div class="social-icons-link">
+                              <ul class="list-unstyled p-0 m-0">
+                                 <li class="me-3"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                 <li class="me-3"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                 <li class="me-3"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                 <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="sisf-page-header-inner" class="sisf-skin--dark position-relative d-flex align-items-center">
+            <div class="container px-2">
+               <a class="navbar-brand sisf-header-logo-link mobile-block" href="index.html"><img
+                     src="images/gfn/logo.png" alt="GFN" style="max-height:60px;"></a>
+               <div class="sisf-centered-header-wrapper sisf--header d-flex align-items-center gap-3">
+                  <a class="navbar-brand sisf-header-logo-link" href="index.html"><img src="images/gfn/logo.png"
+                        alt="GFN" style="max-height:60px;"></a>
+                  <nav class="navbar navbar-expand-lg">
+                     <div class="collapse navbar-collapse sis-main-menu">
+                        <div class="nav-menu-wrapper">
+                           <ul class="navbar-nav" id="menu">
+                              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                              <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                              <li class="nav-item"><a class="nav-link" href="service.html">Services &amp; Operations</a>
+                              </li>
+                              <li class="nav-item"><a class="nav-link" href="investors.html">Investors</a></li>
+                              <li class="nav-item"><a class="nav-link active"
+                                    href="environment-quality.html">Environment &amp; Quality</a></li>
+                              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </nav>
+                  <div class="sisf-widget-holder sisf--two d-flex align-items-center ms-auto">
+                     <div class="header-btn"><a href="contact.html" class="sis-btn-default">Get In Touch<i
+                              class="fa-solid fa-arrow-right"></i></a></div>
+                  </div>
+               </div>
+               <div class="navbar-toggle"></div>
+               <div class="responsive-menu"></div>
+            </div>
+         </div>
+      </header>
+
+      <!-- Page Banner -->
+      <div class="sisf-page-banner"
+         style="background:linear-gradient(135deg,#0a1628 0%,#1a2a4a 50%,#0d1f3c 100%);padding:100px 0 60px;position:relative;overflow:hidden;">
+         <div
+            style="position:absolute;top:0;left:0;right:0;bottom:0;background:url('images/gfn/image14.png') center/cover no-repeat;opacity:0.12;">
+         </div>
+         <div class="container" style="position:relative;z-index:2;">
+            <div class="row align-items-center">
+               <div class="col-lg-8">
+                  <span
+                     style="font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#f0a500;font-weight:600;"
+                     data-aos="fade-right">ISO 9001 | ISO 14001 | ISO 45001</span>
+                  <h1 class="text-white mt-2 mb-3" style="font-size:clamp(2rem,4vw,3rem);font-weight:700;"
+                     data-aos="fade-right" data-aos-delay="100">Environment &amp; Quality</h1>
+                  <p class="text-white" style="opacity:0.85;" data-aos="fade-right" data-aos-delay="200">Environmental
+                     Responsibility &bull; Quality Management &bull; Occupational Safety</p>
+               </div>
+               <div class="col-lg-4 text-end">
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb justify-content-end" style="background:transparent;">
+                        <li class="breadcrumb-item"><a href="index.html" style="color:#f0a500;">Home</a></li>
+                        <li class="breadcrumb-item text-white active">Environment &amp; Quality</li>
+                     </ol>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- ISO Certifications Hero Strip -->
+   <div style="background:#fff;padding:40px 0;border-bottom:1px solid #e8edf4;">
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-12 text-center" data-aos="fade-up">
+               <p style="color:#5a6a7e;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;">
+                  GFN Projects Inc. Certifications</p>
+               <div style="display:flex;flex-wrap:wrap;justify-content:center;">
+                  <span class="gfn-cert-badge"><i class="fa-solid fa-certificate"></i> ISO 9001 Quality
+                     Management</span>
+                  <span class="gfn-cert-badge"><i class="fa-solid fa-leaf"></i> ISO 14001 Environmental
+                     Management</span>
+                  <span class="gfn-cert-badge"><i class="fa-solid fa-helmet-safety"></i> ISO 45001 Occupational
+                     Safety</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Tab Navigation Section -->
+   <div class="section" style="background:#f8fafc;padding:80px 0;">
+      <div class="container">
+         <div class="row justify-content-center mb-4">
+            <div class="col-lg-6">
+               <div class="gfn-tab-nav" data-aos="fade-up">
+                  <button class="gfn-tab-btn active" onclick="switchTab('environment', this)"><i
+                        class="fa-solid fa-leaf me-2"></i>Environment</button>
+                  <button class="gfn-tab-btn" onclick="switchTab('quality', this)"><i
+                        class="fa-solid fa-medal me-2"></i>Quality</button>
+               </div>
+            </div>
+         </div>
+
+         <!-- Environment Tab -->
+         <div id="tab-environment" class="gfn-tab-content active">
+            <div class="row gy-5 align-items-center">
+               <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                  <span class="sisf-m-subtitle white sis-text-anime-style-3">ISO 14001 Aligned</span>
+                  <h2 class="sisf-m-title sis-text-anime-style-3 mt-2">Environmental <span
+                        class="sisf-e-colored">Responsibility</span></h2>
+                  <div class="mt-4">
+                     <p>At GFN, environmental responsibility is integrated into the planning and execution of our oil
+                        &amp; gas projects. We are committed to minimizing the environmental impact of pipelines,
+                        pumping stations, storage facilities, and other oil &amp; gas infrastructure through responsible
+                        engineering, construction, and operational practices.</p>
+                     <p>Our environmental management system is aligned with <strong>ISO 14001</strong>, supporting a
+                        structured approach to environmental risk assessment, pollution prevention, resource efficiency,
+                        and regulatory compliance.</p>
+                     <p>Environmental considerations are addressed throughout each stage of a project, from initial
+                        design through construction, operation, and maintenance. By identifying potential environmental
+                        risks early and applying appropriate controls, we work to reduce emissions, prevent spills and
+                        releases, manage waste responsibly, and protect the surrounding environment while maintaining
+                        safe and efficient oil &amp; gas operations.</p>
+                  </div>
+
+                  <div class="mt-4">
+                     <div class="gfn-principle-item">
+                        <div class="gfn-principle-icon"><i class="fa-solid fa-smog"></i></div>
+                        <div>
+                           <h5 style="margin-bottom:4px;">Emission Reduction</h5>
+                           <p class="mb-0" style="color:#5a6a7e;font-size:14px;">Reducing greenhouse gas emissions and
+                              controlling air pollutants across all project operations.</p>
+                        </div>
+                     </div>
+                     <div class="gfn-principle-item">
+                        <div class="gfn-principle-icon"><i class="fa-solid fa-droplet-slash"></i></div>
+                        <div>
+                           <h5 style="margin-bottom:4px;">Spill Prevention</h5>
+                           <p class="mb-0" style="color:#5a6a7e;font-size:14px;">Preventing spills and releases through
+                              advanced containment systems and monitoring protocols.</p>
+                        </div>
+                     </div>
+                     <div class="gfn-principle-item">
+                        <div class="gfn-principle-icon"><i class="fa-solid fa-recycle"></i></div>
+                        <div>
+                           <h5 style="margin-bottom:4px;">Responsible Waste Management</h5>
+                           <p class="mb-0" style="color:#5a6a7e;font-size:14px;">Managing waste responsibly with proper
+                              disposal, recycling, and reduction initiatives.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                  <figure class="sis-image-anime sis-reveal sis-radius">
+                     <img src="images/gfn/image14.png" class="w-100" alt="Environmental Responsibility"
+                        style="border-radius:12px;max-height:500px;object-fit:cover;">
+                  </figure>
+                  <div class="row gy-3 mt-3">
+                     <div class="col-md-6">
+                        <div class="gfn-env-card sis-comman-bg text-center">
+                           <i class="fa-solid fa-earth-americas fa-2x sisf-e-main-color mb-2"></i>
+                           <h5 style="font-size:14px;margin-bottom:4px;">Environmental Risk Assessment</h5>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="gfn-env-card sis-comman-bg text-center">
+                           <i class="fa-solid fa-shield-halved fa-2x sisf-e-main-color mb-2"></i>
+                           <h5 style="font-size:14px;margin-bottom:4px;">Pollution Prevention Controls</h5>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="gfn-env-card sis-comman-bg text-center">
+                           <i class="fa-solid fa-bolt-lightning fa-2x sisf-e-main-color mb-2"></i>
+                           <h5 style="font-size:14px;margin-bottom:4px;">Resource Efficiency Programs</h5>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="gfn-env-card sis-comman-bg text-center">
+                           <i class="fa-solid fa-scale-balanced fa-2x sisf-e-main-color mb-2"></i>
+                           <h5 style="font-size:14px;margin-bottom:4px;">Regulatory Compliance</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Quality Tab -->
+         <div id="tab-quality" class="gfn-tab-content">
+            <div class="row gy-5 align-items-center">
+               <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+                  <span class="sisf-m-subtitle gray sis-text-anime-style-3">ISO 9001 Aligned</span>
+                  <h2 class="sisf-m-title sis-text-anime-style-3 mt-2">Quality <span
+                        class="sisf-e-colored">Management</span></h2>
+                  <div class="mt-4">
+                     <p>At GFN, quality is an essential part of every oil &amp; gas project we undertake. Our quality
+                        management system is aligned with <strong>ISO 9001</strong>, providing a structured framework
+                        for maintaining consistent standards across engineering, procurement, construction,
+                        installation, and maintenance activities.</p>
+                     <p>The company profile also emphasizes Total Quality Management, qualified personnel, independent
+                        inspection, and continuous management review as part of GFN's approach.</p>
+                     <p>From pipelines and pumping stations to storage tanks and associated facilities, our work is
+                        carefully planned, monitored, and inspected to ensure that project requirements and applicable
+                        industry standards are met. Through rigorous quality control, experienced personnel, documented
+                        procedures, and continuous improvement, we aim to deliver reliable infrastructure that performs
+                        safely and efficiently throughout its service life.</p>
+                  </div>
+                  <div class="mt-4">
+                     <div class="gfn-principle-item">
+                        <div class="gfn-principle-icon"><i class="fa-solid fa-users-gear"></i></div>
+                        <div>
+                           <h5 style="margin-bottom:4px;">Total Quality Management</h5>
+                           <p class="mb-0" style="color:#5a6a7e;font-size:14px;">Company-wide commitment to quality at
+                              every stage of project delivery.</p>
+                        </div>
+                     </div>
+                     <div class="gfn-principle-item">
+                        <div class="gfn-principle-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <div>
+                           <h5 style="margin-bottom:4px;">Independent Inspection</h5>
+                           <p class="mb-0" style="color:#5a6a7e;font-size:14px;">Third-party and independent inspections
+                              to verify quality and standards compliance.</p>
+                        </div>
+                     </div>
+                     <div class="gfn-principle-item">
+                        <div class="gfn-principle-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                        <div>
+                           <h5 style="margin-bottom:4px;">Continuous Improvement</h5>
+                           <p class="mb-0" style="color:#5a6a7e;font-size:14px;">Ongoing management reviews and process
+                              enhancements to improve performance.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="100">
+                  <div class="row gy-3">
+                     <div class="col-6">
+                        <figure class="sis-image-anime sis-reveal sis-radius">
+                           <img src="images/gfn/image15.png" class="w-100" alt="Quality Personnel"
+                              style="border-radius:12px;height:260px;object-fit:cover;">
+                        </figure>
+                     </div>
+                     <div class="col-6">
+                        <figure class="sis-image-anime sis-reveal sis-radius">
+                           <img src="images/gfn/image16.png" class="w-100" alt="Quality Safety"
+                              style="border-radius:12px;height:260px;object-fit:cover;">
+                        </figure>
+                     </div>
+                  </div>
+                  <!-- ISO Summary Cards -->
+                  <div class="row gy-3 mt-2">
+                     <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="sis-primary-background p-3 sis-radius">
+                           <div class="sis-counter-title">
+                              <h3 class="text-white mb-0">ISO<br>9001</h3>
+                           </div>
+                           <p class="text-white mb-0 mt-2" style="font-size:12px;">Quality Management System</p>
+                        </div>
+                     </div>
+                     <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="sis-primary-background p-3 sis-radius">
+                           <div class="sis-counter-title">
+                              <h3 class="text-white mb-0">ISO<br>14001</h3>
+                           </div>
+                           <p class="text-white mb-0 mt-2" style="font-size:12px;">Environmental Management</p>
+                        </div>
+                     </div>
+                     <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="sis-primary-background p-3 sis-radius">
+                           <div class="sis-counter-title">
+                              <h3 class="text-white mb-0">ISO<br>45001</h3>
+                           </div>
+                           <p class="text-white mb-0 mt-2" style="font-size:12px;">Occupational Health &amp; Safety</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <!-- Commitment Banner with Business Card Image -->
+   <div class="sisf-sis-comman-background section" style="padding:70px 0;">
+      <div class="container">
+         <div class="row gy-4 align-items-center">
+            <div class="col-lg-7" data-aos="fade-right">
+               <h2 class="text-white mb-3">Our Triple ISO Commitment</h2>
+               <p class="text-white" style="opacity:0.9;">GFN's ISO 9001, ISO 14001, and ISO 45001 certifications
+                  reinforce our commitment to quality, environmental responsibility, and occupational health and safety
+                  across our oil &amp; gas operations. These certifications demonstrate our dedication to exceeding
+                  international standards and delivering safe, sustainable, and high-quality infrastructure to our
+                  clients.</p>
+               <div class="mt-4">
+                  <a href="about-us.html" class="sis-btn-default me-3">About GFN <i
+                        class="fa-solid fa-arrow-right"></i></a>
+                  <a href="contact.html" class="sis-btn-default btn-light mt-2 mt-md-0">Contact Us <i
+                        class="fa-solid fa-arrow-right"></i></a>
+               </div>
+            </div>
+            <div class="col-lg-5" data-aos="fade-left">
+               <figure class="sis-image-anime sis-reveal">
+                  <img src="images/gfn/image3.jpg" class="w-100" alt="GFN Business Card" style="border-radius:12px;">
+               </figure>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="sisf-page-footer" style="background:#0a1628;padding:50px 0 20px;">
+      <div class="container">
+         <div class="row gy-4">
+            <div class="col-lg-4">
+               <img src="images/gfn/logo.png" alt="GFN Projects Inc." style="max-height:55px;margin-bottom:20px;">
+               <p style="color:#aab4c4;">GFN Projects Inc. delivers specialized oil &amp; gas services across North
+                  America, Middle East, and Africa.</p>
+            </div>
+            <div class="col-lg-2 col-md-4">
+               <h5 style="color:#fff;margin-bottom:20px;">Quick Links</h5>
+               <ul class="list-unstyled" style="color:#aab4c4;">
+                  <li class="mb-2"><a href="index.html" style="color:#aab4c4;text-decoration:none;">Home</a></li>
+                  <li class="mb-2"><a href="about-us.html" style="color:#aab4c4;text-decoration:none;">About Us</a></li>
+                  <li class="mb-2"><a href="service.html" style="color:#aab4c4;text-decoration:none;">Services</a></li>
+                  <li class="mb-2"><a href="investors.html" style="color:#aab4c4;text-decoration:none;">Investors</a>
+                  </li>
+                  <li><a href="contact.html" style="color:#aab4c4;text-decoration:none;">Contact</a></li>
+               </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+               <h5 style="color:#fff;margin-bottom:20px;">Certifications</h5>
+               <ul class="list-unstyled" style="color:#aab4c4;">
+                  <li class="mb-2"><i class="fa-solid fa-certificate sisf-e-main-color me-2"></i>ISO 9001 — Quality</li>
+                  <li class="mb-2"><i class="fa-solid fa-leaf sisf-e-main-color me-2"></i>ISO 14001 — Environment</li>
+                  <li><i class="fa-solid fa-helmet-safety sisf-e-main-color me-2"></i>ISO 45001 — Safety</li>
+               </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+               <h5 style="color:#fff;margin-bottom:20px;">Contact</h5>
+               <ul class="list-unstyled" style="color:#aab4c4;">
+                  <li class="mb-2"><i class="fa-solid fa-phone sisf-e-main-color me-2"></i>+1 (647) 555-0123</li>
+                  <li class="mb-2"><i class="fa-solid fa-envelope sisf-e-main-color me-2"></i>info@gfnprojects.com</li>
+                  <li><i class="fa-solid fa-globe sisf-e-main-color me-2"></i>North America | Middle East | Africa</li>
+               </ul>
+            </div>
+         </div>
+         <hr style="border-color:#1e3a5f;margin-top:40px;">
+         <div class="text-center" style="color:#6a7f9a;font-size:14px;padding-top:15px;">&copy; 2026 GFN Projects Inc.
+            All Rights Reserved.</div>
+      </div>
+   </footer>
+
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/validator.min.js"></script>
+   <script src="js/jquery.slicknav.js"></script>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/aos.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <script src="js/jquery.counterup.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>
+   <script src="js/gsap.min.js"></script>
+   <script src="js/magiccursor.js"></script>
+   <script src="js/ScrollTrigger.min.js"></script>
+   <script src="js/SplitText.js"></script>
+   <script src="js/script.js"></script>
+   <script>
+      function switchTab(tabId, btn) {
+         document.querySelectorAll('.gfn-tab-content').forEach(t => t.classList.remove('active'));
+         document.querySelectorAll('.gfn-tab-btn').forEach(b => b.classList.remove('active'));
+         document.getElementById('tab-' + tabId).classList.add('active');
+         btn.classList.add('active');
+      }
+   </script>
+</body>
+
+</html>
