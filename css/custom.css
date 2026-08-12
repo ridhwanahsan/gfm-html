@@ -317,48 +317,30 @@ h2.sis-text-anime-style-1 {
 .sis-hero .hero-slider-image {
 	background: #000;
 }
-.sis-hero .gfn-hero-video-wrap {
+.sis-hero .gfn-hero-video-bg {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
-	z-index: 0;
-}
-.sis-hero .gfn-hero-video-bg {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 300%;
-	height: 300%;
-	min-width: 100%;
-	min-height: 100%;
-	max-width: none;
-	max-height: none;
-	transform: translate(-50%, -50%);
 	object-fit: cover;
 	object-position: center center;
 	z-index: 0;
 	border: 0;
 	outline: 0;
 	background: transparent;
+	pointer-events: none;
 }
 .sis-hero .gfn-hero-video-overlay {
 	position: absolute;
 	inset: 0;
 	z-index: 1;
-	pointer-events: auto;
 	background: linear-gradient(
 		135deg,
 		rgba(5, 10, 20, 0.82) 0%,
 		rgba(5, 10, 20, 0.55) 45%,
 		rgba(5, 10, 20, 0.78) 100%
 	);
-}
-.sis-hero .gfn-hero-cover-click {
-	pointer-events: auto;
-	cursor: default;
 }
 .sis-hero .container,
 .sis-hero .hero-content,
