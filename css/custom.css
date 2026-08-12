@@ -212,7 +212,8 @@ h5 {
 
 }
 
-.sis-section-title .sisf-m-subtitle {
+.sis-section-title .sisf-m-subtitle,
+.sisf-m-subtitle {
 	font-family: var(--default-font);
 	font-size: 16px;
 	font-weight: 500;
@@ -230,7 +231,8 @@ h5 {
 }
 
 .sis-section-title .sisf-subtitle::before,
-.sis-section-title .sisf-m-subtitle::before {
+.sis-section-title .sisf-m-subtitle::before,
+.sisf-m-subtitle::before {
 	content: '';
 	border-radius: 0%;
 	display: inline-block;
@@ -238,16 +240,22 @@ h5 {
 	vertical-align: middle;
 	margin-top: -4px;
 	background-color: var(--main-color);
-	mask-image: url("../images/icon-sub-heading.svg");
+	mask-image: url("https://oilix-html.wpthemeverse.com/images/icon-sub-heading.svg");
+	-webkit-mask-image: url("https://oilix-html.wpthemeverse.com/images/icon-sub-heading.svg");
 	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
 	mask-size: cover;
+	-webkit-mask-size: cover;
 	width: 20px;
 	height: 25px;
 }
 
 .sis-section-title .sisf--subtitle::before,
-.sis-section-title .sisf--m-subtitle::before {
-	mask-image: url("../images/icon-sub-heading.svg");
+.sis-section-title .sisf--m-subtitle::before,
+.sisf--subtitle::before,
+.sisf--m-subtitle::before {
+	mask-image: url("https://oilix-html.wpthemeverse.com/images/icon-sub-heading.svg");
+	-webkit-mask-image: url("https://oilix-html.wpthemeverse.com/images/icon-sub-heading.svg");
 }
 
 .sis-section-title h2 {
@@ -280,6 +288,63 @@ h5 {
 
 .sisf-m-subtitle.gray::before {
 	background-color: var(--main-color);
+}
+
+/* SplitText Anti-Whitespace Fix: inline-block character wrappers create unwanted letter gaps (the "P o w e r i n g" bug) */
+.sis-text-anime-style-1 > div,
+.sis-text-anime-style-1 > div > div,
+.sis-text-anime-style-2 > div,
+.sis-text-anime-style-2 > div > div,
+.sis-text-anime-style-3 > div,
+.sis-text-anime-style-3 > div > div,
+.sis-text-anime-style-1 div[style*="inline-block"],
+.sis-text-anime-style-2 div[style*="inline-block"],
+.sis-text-anime-style-3 div[style*="inline-block"] {
+	display: inline !important;
+	letter-spacing: 0px !important;
+	word-spacing: 0px !important;
+}
+.sis-section-title h1.sis-text-anime-style-3,
+.sis-section-title h2.sis-text-anime-style-3,
+h1.sis-text-anime-style-3,
+h2.sis-text-anime-style-3,
+h1.sis-text-anime-style-1,
+h2.sis-text-anime-style-1 {
+	letter-spacing: 0px !important;
+}
+
+/* GFN Hero Video Background */
+.sis-hero .hero-slider-image {
+	background: #000;
+}
+.sis-hero .gfn-hero-video-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: 0;
+}
+.sis-hero .gfn-hero-video-overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background: linear-gradient(
+		135deg,
+		rgba(5, 10, 20, 0.82) 0%,
+		rgba(5, 10, 20, 0.55) 45%,
+		rgba(5, 10, 20, 0.78) 100%
+	);
+}
+.sis-hero .container,
+.sis-hero .hero-content,
+.sis-hero .sis-scroll-container,
+.sis-hero .sis-bottom-contents,
+.sis-hero .sis-hero-right-image {
+	position: relative;
+	z-index: 2;
 }
 
 figure {
