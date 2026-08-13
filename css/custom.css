@@ -1604,7 +1604,7 @@ i::before {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: linear-gradient(90deg, rgba(26, 26, 26, 0.85) 40.8%, rgba(26, 26, 26, 0) 81.59%), linear-gradient(180deg, rgba(26, 26, 26, 0.85) 50%, rgba(26, 26, 26, 0) 100%);
+	background: linear-gradient(90deg, rgb(0 0 0 / 0%) 40.8%, rgb(26 26 26 / 0%) 81.59%), linear-gradient(180deg, rgba(26, 26, 26, 0) 50%, rgba(26, 26, 26, 0) 100%);
 	z-index: 2;
 }
 
@@ -1612,11 +1612,7 @@ i::before {
 	background: linear-gradient(0deg, rgba(26, 26, 26, 0.4), rgba(26, 26, 26, 0.4)), linear-gradient(0deg, rgba(26, 26, 26, 0.44) 30%, rgba(26, 26, 26, 0) 100%);
 
 }
-
-.sisf--hero-slider.sis-hero.hero-slider .hero-slider-layout .hero-slide .hero-slider-image::before {
-	background: linear-gradient(0deg, rgba(26, 26, 26, 0.4), rgba(26, 26, 26, 0.4)), linear-gradient(90deg, rgba(26, 26, 26, 0.5795) 0%, rgba(26, 26, 26, 0) 100%), linear-gradient(0deg, rgba(26, 26, 26, 0.44) 30%, rgba(26, 26, 26, 0) 100%);
-
-}
+ 
 
 .sis-hero.sisf--hero-video .hero-slider-layout .hero-slide {
 	min-height: 800px;
@@ -1631,6 +1627,10 @@ i::before {
 	text-align: center;
 	top: 0px;
 	padding-bottom: 40px;
+}
+
+.hero-content .sis-section-title.mb-0 {
+	width: 840px;
 }
 
 .hero-content .sis-section-title p {
