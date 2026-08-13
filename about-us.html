@@ -89,10 +89,50 @@
                            <div class="nav-menu-wrapper">
                               <ul class="navbar-nav" id="menu">
                                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                 <li class="nav-item"><a class="nav-link active" href="about-us.html">About Us</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="service.html">Services &amp; Operations</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="investors.html">Investors</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="environment-quality.html">Environment &amp; Quality</a></li>
+                                 <li class="nav-item submenu">
+                                    <a class="nav-link active" href="about-us.html">About Us <i class="fas fa-chevron-down custom-toggle-icon ps-2"></i></a>
+                                    <ul class="sub-menu">
+                                       <li class="nav-item"><a class="nav-link" href="about-us.html#who-we-are">Who We Are?</a></li>
+                                       <li class="nav-item"><a class="nav-link" href="about-us.html#our-vision">Our Vision</a></li>
+                                       <li class="nav-item"><a class="nav-link" href="about-us.html#our-mission">Our Mission</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class="nav-item submenu">
+                                    <a class="nav-link" href="service.html">Our Services & Operations <i class="fas fa-chevron-down custom-toggle-icon ps-2"></i></a>
+                                    <ul class="sub-menu">
+                                       <li class="nav-item submenu">
+                                          <a class="nav-link" href="service.html#pipeline-works">Oil & Gas Projects <i class="fas fa-chevron-right custom-toggle-icon ps-2"></i></a>
+                                          <ul class="sub-menu">
+                                             <li class="nav-item"><a class="nav-link" href="service.html#pipeline-works">Pipeline Works</a></li>
+                                             <li class="nav-item"><a class="nav-link" href="service.html#tanks-works">Tanks Works</a></li>
+                                             <li class="nav-item"><a class="nav-link" href="service.html#pump-stations-works">Pump Stations Works</a></li>
+                                             <li class="nav-item"><a class="nav-link" href="service.html#refineries-maintenance-works">Refineries Maintenance Works</a></li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li class="nav-item submenu">
+                                    <a class="nav-link" href="investors.html">Investors <i class="fas fa-chevron-down custom-toggle-icon ps-2"></i></a>
+                                    <ul class="sub-menu">
+                                       <li class="nav-item"><a class="nav-link" href="investors.html#financial-report-2025">Financial Report 2025</a></li>
+                                       <li class="nav-item"><a class="nav-link" href="investors.html#financial-report-2024">Financial Report 2024</a></li>
+                                       <li class="nav-item"><a class="nav-link" href="investors.html#financial-report-2023">Financial Report 2023</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class="nav-item submenu">
+                                    <a class="nav-link" href="environment-quality.html">Environment & Quality <i class="fas fa-chevron-down custom-toggle-icon ps-2"></i></a>
+                                    <ul class="sub-menu">
+                                       <li class="nav-item"><a class="nav-link" href="environment-quality.html#hse">HSE (Health, Safety & Environment)</a></li>
+                                       <li class="nav-item submenu">
+                                          <a class="nav-link" href="environment-quality.html#iso-9001">ISO Certifications <i class="fas fa-chevron-right custom-toggle-icon ps-2"></i></a>
+                                          <ul class="sub-menu">
+                                             <li class="nav-item"><a class="nav-link" href="environment-quality.html#iso-9001">ISO 9001</a></li>
+                                             <li class="nav-item"><a class="nav-link" href="environment-quality.html#iso-14001">ISO 14001</a></li>
+                                             <li class="nav-item"><a class="nav-link" href="environment-quality.html#iso-45001">ISO 45001</a></li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </li>
                                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                               </ul>
                            </div>
@@ -138,7 +178,7 @@
       <!-- Header End -->
 
       <!-- Who We Are Section Start -->
-      <div class="sis-about-us-section sis-comman-background section">
+      <div id="who-we-are" class="sis-about-us-section sis-comman-background section" style="scroll-margin-top:80px;">
          <div class="container">
             <div class="row gy-5 align-items-center">
                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
@@ -186,7 +226,7 @@
       <!-- Who We Are Section End -->
 
       <!-- Vision & Mission Section Start -->
-      <div class="sis-benefits-section sis-primary-background section">
+      <div id="our-vision" class="sis-benefits-section sis-primary-background section" style="scroll-margin-top:80px;">
          <div class="container">
             <div class="row gy-5">
                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
@@ -246,6 +286,9 @@
          </div>
       </div>
       <!-- Vision & Mission Section End -->
+
+      <!-- Our Mission Section for Anchor -->
+      <div id="our-mission" style="scroll-margin-top:80px;"></div>
 
       <!-- Certifications / ISO Section -->
       <div class="sis-technology-section section">

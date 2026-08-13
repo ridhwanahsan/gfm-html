@@ -1422,6 +1422,49 @@ i::before {
 	transition: all 0.4s ease-in-out;
 }
 
+/* Mobile dropdown support - click to open */
+.sis-main-menu ul li.submenu.active>ul {
+	visibility: visible;
+	opacity: 1;
+	transform: scaleY(1);
+	padding: 5px 0;
+}
+
+/* Nested dropdown hover support */
+.sis-main-menu ul ul li.submenu:hover>ul {
+	visibility: visible;
+	opacity: 1;
+	transform: scaleY(1);
+	left: 100%;
+	top: 0;
+}
+
+/* Mobile nested dropdown support */
+.sis-main-menu ul ul li.submenu.active>ul {
+	visibility: visible;
+	opacity: 1;
+	transform: scaleY(1);
+	left: 100%;
+	top: 0;
+}
+
+/* Dropdown toggle icon for mobile */
+.custom-toggle-icon {
+	transition: transform 0.3s ease;
+	display: inline-block;
+}
+
+.sis-main-menu ul li.submenu.active>.custom-toggle-icon {
+	transform: rotate(180deg);
+}
+
+/* Improved dropdown positioning for nested menus */
+.sis-main-menu ul ul ul {
+	left: 100%;
+	top: 0;
+	margin-left: 10px;
+}
+
 .sis-main-menu ul ul li a:hover,
 .sis-main-menu ul ul li a:focus,
 .sis-main-menu ul ul li a.active {

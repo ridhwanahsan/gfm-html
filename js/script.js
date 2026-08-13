@@ -77,6 +77,37 @@
         });
     });
 
+    // Mobile Dropdown Click Support
+    $(document).on('click', '.sis-main-menu .nav-item.submenu > .nav-link', function(e) {
+        if ($(window).width() <= 992) {
+            e.preventDefault();
+            const $submenu = $(this).parent('li.submenu');
+            const $parentSubmenu = $submenu.closest('ul.sub-menu');
+            
+            // Toggle current submenu
+            $submenu.toggleClass('active');
+            
+            // Close other submenus at the same level
+            if ($parentSubmenu.length) {
+                $parentSubmenu.children('li.submenu').not($submenu).removeClass('active');
+            } else {
+                $('.sis-main-menu > ul > li.submenu').not($submenu).removeClass('active');
+            }
+        }
+    });
+
+    // Desktop click support for dropdowns (in addition to hover)
+    $(document).on('click', '.sis-main-menu .nav-item.submenu > .nav-link', function(e) {
+        if ($(window).width() > 992) {
+            const $submenu = $(this).parent('li.submenu');
+            // Allow click to work as normal for links, but also support clicking toggle icon
+            if ($(e.target).hasClass('custom-toggle-icon') || $(e.target).closest('.custom-toggle-icon').length) {
+                e.preventDefault();
+                $submenu.toggleClass('active');
+            }
+        }
+    });
+
     // Skills Progress Bar
     if ($.fn.waypoint && $('.sis-skills-progress-bar').length) {
         let animated = false;
