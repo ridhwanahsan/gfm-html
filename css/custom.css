@@ -2350,9 +2350,14 @@ i::before {
 }
 
 .gfn-about-certs-grid {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	gap: 14px;
+	 
+}
+.gfn-about-certs-grid img {
+    width: 70% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
 }
 
 .gfn-cert-card {
